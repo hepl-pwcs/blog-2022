@@ -49,4 +49,25 @@ return [
         'controller' => 'SessionController',
         'callback' => 'destroy',
     ],
+    [
+        'method' => 'GET',
+        'action' => 'index',
+        'resource' => 'rss',
+        'controller' => 'RssController',
+        'callback' => 'index',
+    ],
+    [
+        'method' => 'GET',
+        'action' => 'edit',
+        'resource' => 'profile',
+        'controller' => 'ProfileController',
+        'callback' => 'edit',
+    ],
+    [
+        'method' => 'POST',
+        'action' => 'update',
+        'resource' => 'profile',
+        'controller' => 'ProfileController',
+        'callback' => 'update',
+    ],
 ];

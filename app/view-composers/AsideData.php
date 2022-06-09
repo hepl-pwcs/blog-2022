@@ -8,7 +8,7 @@ use Blog\Models\Category;
 
 trait AsideData
 {
-    public function fetch_aside_data()
+    public function fetch_aside_data(): array
     {
         $authors = Author::all();
         $categories = Category::all();

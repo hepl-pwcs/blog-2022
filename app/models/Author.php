@@ -16,11 +16,13 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @method static inRandomOrder()
  * @method static select(string $string)
  * @method static get(string[] $array)
+ * @method static where(string $string, mixed $email)
  */
 
 class Author extends Model
 {
     protected $keyType = 'string';
+    protected $guarded = [];
     protected $casts = [
         'id' => 'string',
     ];

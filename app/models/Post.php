@@ -25,6 +25,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @method static select(string $string)
  * @method static get(string[] $array)
  * @method static where(string $string, mixed $slug)
+ * @method static latest(string $string)
  */
 
 class Post extends Model
